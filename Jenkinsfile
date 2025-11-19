@@ -44,7 +44,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker rm -f jenkins-demo || true'
-                    sh 'docker run -d --name jenkins-demo -p 3000:3000 ${DOCKER_IMAGE}:latest'
+                    sh 'docker run -d --name jenkins-demo -p 3800:3800 ${DOCKER_IMAGE}:latest'
                 }
             }
         }
